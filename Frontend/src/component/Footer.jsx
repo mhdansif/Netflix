@@ -1,13 +1,21 @@
-const Footer = () => {
-  const year = new Date().getFullYear();
+import React from "react";
 
+const Footer = () => {
   return (
-    <footer className="bg-gray-100 py-6 mt-8 border-t border-gray-300">
-      <div className="flex flex-col items-center gap-3">
-        <p className="text-gray-600 text-sm">
-          MOHAMED ANSIF &copy; {year}. All rights reserved.
-        </p>
-      </div>
+    <footer
+      style={{
+        backgroundColor: "white", // White background
+        color: "black",           // Black text
+        padding: "15px 0",        // Vertical padding
+        textAlign: "center",      // Centered text
+        width: "100%",            // Full width
+        position: "fixed",        // Stick to bottom
+        bottom: 0,
+        left: 0,
+        boxShadow: "0 -2px 5px rgba(0,0,0,0.1)" // subtle shadow
+      }}
+    >
+      MOHAMED ANSIF &copy; 2025. All rights reserved.
     </footer>
   );
 };

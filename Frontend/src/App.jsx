@@ -7,15 +7,12 @@ import Footer from "./component/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col min-h-screen">
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Loginpage />} />
-            <Route path="/success" element={<Successfull />} />
-            <Route path="/failed" element={<Failed />} />
-          </Routes>
-        </main>
-
+      <div className="app-container" style={{ minHeight: "100vh", paddingBottom: "60px" }}>
+        <Routes>
+          <Route path="/" element={<Loginpage />} />
+          <Route path="/success" element={<Successfull />} />
+          <Route path="/failed" element={<Failed />} />
+        </Routes>
         <Footer />
       </div>
     </BrowserRouter>
